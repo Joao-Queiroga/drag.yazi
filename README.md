@@ -23,3 +23,7 @@ on   = [ "<C-d>" ]
 run  = "plugin drag"
 desc = "Drag Files"
 ```
+
+## Credits
+
+- [archivemount.yazi](https://github.com/AnirudhG07/archivemount.yazi): The place where I shamelessly stole some functions
