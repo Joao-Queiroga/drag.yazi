@@ -1,13 +1,4 @@
----@param str string
-local notify = function(str)
-	ya.notify({
-		title = "riprag",
-		content = str,
-		timeout = 2,
-		level = "info",
-	})
-end
-
+---@param s string
 local function fail(s, ...)
 	ya.notify({ title = "ripdrag", content = string.format(s, ...), timeout = 3, level = "error" })
 end
@@ -39,6 +30,5 @@ return {
 		elseif not output.status.success and output.status.code ~= 131 then
 			fail("`ripdrag` exited with error code %s", output.status.code)
 		end
-		ya.manager_emit("escape", { all = true })
 	end,
 }
