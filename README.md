@@ -12,13 +12,13 @@ git clone https://github.com/Joao-Queiroga/drag.yazi.git ~/.config/yazi/plugins/
 git clone https://github.com/Joao-Queiroga/drag.yazi.git %AppData%\yazi\config\plugins\ripdrag.yazi
 
 # Or with yazi plugin manager
-ya pack -a Joao-Queiroga/drag
+ya pkg add Joao-Queiroga/drag
 ```
 
 - Add this to your `keymap.toml`:
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "<C-d>" ]
 run  = "plugin drag"
 desc = "Drag Files"
